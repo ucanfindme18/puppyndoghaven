@@ -1,700 +1,660 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
-  <meta name="description" content="Discover heartwarming stories, expert puppy & dog training tips, breed guides, health advice, rescue stories, enrichment ideas and adorable photos at Puppy & Dog Haven – your 2025–2026 dog lover’s community.">
-  <meta name="keywords" content="puppies, dogs, dog training, puppy care, dog breeds, rescue dogs, dog health, enrichment, senior dog care, adorable puppies, dog blog 2026">
-  <meta name="author" content="Puppy & Dog Haven">
-  <meta property="og:title" content="Puppy & Dog Haven – Adorable Puppies, Expert Tips & Heartwarming Stories">
-  <meta property="og:description" content="Celebrating the unconditional love of dogs with training advice, breed spotlights, rescue tales, seasonal care guides and endless cuteness. Join our community today!">
-  <meta property="og:image" content="https://communicanine.ca/wp-content/uploads/2021/03/lineofdogs.jpg">
-  <meta property="og:url" content="https://puppyndoghaven.store ">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>Puppy & Dog Haven – Adorable Puppies, Expert Tips & Heartwarming Dog Stories 2026</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Google tag (gtag.js) - Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7F2D51PEB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-S7F2D51PEB');
-  </script>
-
-  <link rel="canonical" href="https://puppyanddoghaven.com/">
-
-  <style>
-    :root {
-      --primary: #4a90e2;
-      --secondary: #f5f7fa;
-      --text: #333333;
-      --light-text: #666666;
-      --bg: #ffffff;
-    }
-
-    html, body {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Open Sans', sans-serif;
-      line-height: 1.7;
-    }
-
-    header {
-      position: relative;
-      height: 420px;
-      background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),
-                  url('https://communicanine.ca/wp-content/uploads/2021/03/lineofdogs.jpg') center/cover no-repeat;
-      background-color: #1e2a38;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-    }
-
-    .header-content {
-      max-width: 1200px;
-      padding: 3rem 5%;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 4.5rem;
-      margin: 0 0 1rem;
-      text-shadow: 4px 4px 16px rgba(0,0,0,0.9);
-    }
-
-    header p {
-      font-size: 1.8rem;
-      margin: 0;
-      text-shadow: 3px 3px 12px rgba(0,0,0,0.8);
-    }
-
-    nav {
-      background: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 5%;
-      box-sizing: border-box;
-      flex-wrap: wrap;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 3rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: color 0.3s;
-      cursor: pointer;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-    }
-
-    nav a:hover, nav a:active {
-      color: var(--primary);
-      background: rgba(74, 144, 226, 0.1);
-    }
-
-    .search-container {
-      position: relative;
-      width: 260px;
-    }
-
-    #search-input {
-      width: 100%;
-      padding: 0.75rem 1rem 0.75rem 2.8rem;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      font-size: 1rem;
-      background: #f9fbfd;
-      transition: all 0.2s;
-    }
-
-    #search-input:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
-      background: white;
-    }
-
-    .search-icon {
-      position: absolute;
-      left: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--light-text);
-      font-size: 1.1rem;
-      pointer-events: none;
-    }
-
-    #search-results {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-      margin-top: 0.6rem;
-      max-height: 420px;
-      overflow-y: auto;
-      z-index: 999;
-      display: none;
-      border: 1px solid #eee;
-    }
-
-    .search-result-item {
-      padding: 1rem 1.2rem;
-      cursor: pointer;
-      transition: background 0.2s;
-      border-bottom: 1px solid #f0f0f0;
-    }
-
-    .search-result-item:last-child {
-      border-bottom: none;
-    }
-
-    .search-result-item:hover {
-      background: rgba(74, 144, 226, 0.08);
-    }
-
-    .search-result-title {
-      font-weight: 600;
-      color: var(--text);
-      margin: 0 0 0.3rem;
-      font-size: 1.05rem;
-    }
-
-    .search-result-date {
-      font-size: 0.85rem;
-      color: var(--light-text);
-      font-style: italic;
-    }
-
-    .search-result-excerpt {
-      font-size: 0.92rem;
-      color: #555;
-      margin-top: 0.4rem;
-      line-height: 1.4;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .container,
-    .full-post-container,
-    .about-container,
-    .contact-container,
-    .privacy-container {
-      width: 100%;
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 1rem 5% 4rem;
-      box-sizing: border-box;
-    }
-
-    #posts {
-      padding-top: 0.5rem;
-    }
-
-    .posts {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2.5rem;
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      justify-items: center;
-      align-content: start;
-    }
-
-    .post-card {
-      background: white;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-      width: 100%;
-      max-width: 380px;
-    }
-
-    .post-card:hover, .post-card:active {
-      transform: translateY(-8px);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-    }
-
-    .post-img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
-
-    .post-content {
-      padding: 1.8rem;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .post-content h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      margin: 0 0 0.6rem;
-      line-height: 1.3;
-    }
-
-    .post-date {
-      font-size: 0.95rem;
-      color: var(--light-text);
-      margin-bottom: 1rem;
-      font-style: italic;
-    }
-
-    .post-excerpt {
-      font-size: 1.05rem;
-      margin-bottom: 1.2rem;
-      flex-grow: 1;
-    }
-
-    .read-more-wrapper {
-      display: flex;
-      justify-content: center;
-      margin-top: auto;
-    }
-
-    .read-more {
-      display: inline-block;
-      padding: 1rem 2rem;
-      background: var(--primary);
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: background 0.3s;
-      text-align: center;
-      min-width: 200px;
-    }
-
-    .read-more:hover, .read-more:active {
-      background: #3a7bc8;
-    }
-
-    .pagination {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-      margin: 3rem 0;
-      font-size: 1.1rem;
-    }
-
-    .pagination button {
-      padding: 0.8rem 1.2rem;
-      background: var(--primary);
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    .pagination button:disabled {
-      background: #ccc;
-      cursor: not-allowed;
-    }
-
-    .pagination span {
-      font-weight: 600;
-    }
-
-    #full-post, #about-page, #contact-page, #privacy-page {
-      display: none;
-    }
-
-    .featured-image {
-      display: block;
-      width: 1200px;
-      max-width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 16px;
-      margin: 1rem auto 2rem;
-    }
-
-    .about-container,
-    .full-post-container,
-    .privacy-container,
-    .contact-container {
-      max-width: 1400px;
-    }
-
-    .about-text,
-    .post-body {
-      font-size: 1.15rem;
-      line-height: 1.8;
-    }
-
-    .full-post-container h1,
-    .about-container h1,
-    .contact-container h1,
-    .privacy-container h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin: 1rem 0;
-      line-height: 1.2;
-    }
-
-    .back-btn {
-      display: inline-block;
-      margin: 0 0 0.8rem 0;
-      color: var(--primary);
-      font-weight: 600;
-      font-size: 1.2rem;
-      cursor: pointer;
-      padding: 0.4rem 0;
-    }
-
-    .back-btn:hover, .back-btn:active {
-      text-decoration: underline;
-    }
-
-    .social-share {
-      text-align: center;
-      margin: 2rem 0 3rem;
-      font-size: 1.1rem;
-      color: var(--light-text);
-    }
-
-    .social-share p {
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-
-    .social-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1.2rem;
-      flex-wrap: wrap;
-    }
-
-    .share-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      color: white;
-      font-size: 1.3rem;
-      text-decoration: none;
-      transition: transform 0.2s, opacity 0.2s;
-    }
-
-    .share-btn:hover {
-      transform: scale(1.15);
-      opacity: 0.9;
-    }
-
-    .twitter { background: #1da1f2; }
-    .facebook { background: #1877f2; }
-    .linkedin { background: #0a66c2; }
-    .whatsapp { background: #25d366; }
-    .email { background: #ea4335; }
-
-    .article-bottom-nav {
-      text-align: center;
-      margin: 2rem 0 1rem;
-      font-size: 1.15rem;
-    }
-
-    .article-bottom-nav a {
-      color: var(--primary);
-      font-weight: 600;
-      text-decoration: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
-      transition: background 0.2s;
-    }
-
-    .article-bottom-nav a:hover,
-    .article-bottom-nav a:active {
-      background: rgba(74, 144, 226, 0.1);
-    }
-
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 3rem 5%;
-      font-size: 1rem;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    @media (max-width: 1024px) {
-      .posts { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
-      nav { padding: 1rem 4%; }
-    }
-
-    @media (max-width: 768px) {
-      header { height: 340px; }
-      header h1 { font-size: 3.2rem; }
-      header p { font-size: 1.4rem; }
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem 4%;
-      }
-      nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 1rem;
-        width: 100%;
-      }
-      nav a { font-size: 1.3rem; padding: 1rem; }
-      .search-container { margin: 1rem 0 0.5rem; width: 100%; }
-      .container,
-      .full-post-container,
-      .about-container,
-      .contact-container,
-      .privacy-container { padding: 0.5rem 4% 3rem; }
-      .posts { grid-template-columns: 1fr; gap: 2.5rem; }
-      .post-img { height: 320px; }
-      .featured-image {
-        width: 100%;
-        height: auto;
-      }
-      .full-post-container h1,
-      .about-container h1 { font-size: 2.5rem; }
-      #search-results {
-        position: relative;
-        margin-top: 1rem;
-        box-shadow: none;
-        border: 1px solid #ddd;
-      }
-      .social-buttons { gap: 1rem; }
-      .share-btn { width: 44px; height: 44px; font-size: 1.2rem; }
-    }
-
-    @media (min-width: 1400px) {
-      .container,
-      .posts,
-      .full-post-container,
-      .about-container {
-        padding-left: 8%;
-        padding-right: 8%;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Discover heartwarming stories, expert puppy & dog training tips, breed guides, health advice, rescue stories, enrichment ideas and adorable photos at Puppy & Dog Haven – your 2025–2026 dog lover’s community.">
+    <meta name="keywords" content="puppies, dogs, dog training, puppy care, dog breeds, rescue dogs, dog health, enrichment, senior dog care, adorable puppies, dog blog 2026">
+    <meta name="author" content="Puppy & Dog Haven">
+    <meta property="og:title" content="Puppy & Dog Haven – Adorable Puppies, Expert Tips & Heartwarming Stories">
+    <meta property="og:description" content="Celebrating the unconditional love of dogs with training advice, breed spotlights, rescue tales, seasonal care guides and endless cuteness. Join our community today!">
+    <meta property="og:image" content="https://communicanine.ca/wp-content/uploads/2021/03/lineofdogs.jpg">
+    <meta property="og:url" content="https://puppyndoghaven.store">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Puppy & Dog Haven – Adorable Puppies, Expert Tips & Heartwarming Dog Stories 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google tag (gtag.js) - Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7F2D51PEB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S7F2D51PEB');
+    </script>
+    <link rel="canonical" href="https://puppyanddoghaven.com/">
+    <style>
+        :root {
+            --primary: #4a90e2;
+            --secondary: #f5f7fa;
+            --text: #333333;
+            --light-text: #666666;
+            --bg: #ffffff;
+        }
+        html, body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+        }
+        header {
+            position: relative;
+            height: 420px;
+            background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://communicanine.ca/wp-content/uploads/2021/03/lineofdogs.jpg') center/cover no-repeat;
+            background-color: #1e2a38;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+        .header-content {
+            max-width: 1200px;
+            padding: 3rem 5%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            margin: 0 0 1rem;
+            text-shadow: 4px 4px 16px rgba(0,0,0,0.9);
+        }
+        header p {
+            font-size: 1.8rem;
+            margin: 0;
+            text-shadow: 3px 3px 12px rgba(0,0,0,0.8);
+        }
+        nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 3rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+        }
+        nav a:hover, nav a:active {
+            color: var(--primary);
+            background: rgba(74, 144, 226, 0.1);
+        }
+        .search-container {
+            position: relative;
+            width: 260px;
+        }
+        #search-input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.8rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: #f9fbfd;
+            transition: all 0.2s;
+        }
+        #search-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+            background: white;
+        }
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--light-text);
+            font-size: 1.1rem;
+            pointer-events: none;
+        }
+        #search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            margin-top: 0.6rem;
+            max-height: 420px;
+            overflow-y: auto;
+            z-index: 999;
+            display: none;
+            border: 1px solid #eee;
+        }
+        .search-result-item {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+        .search-result-item:hover {
+            background: rgba(74, 144, 226, 0.08);
+        }
+        .search-result-title {
+            font-weight: 600;
+            color: var(--text);
+            margin: 0 0 0.3rem;
+            font-size: 1.05rem;
+        }
+        .search-result-date {
+            font-size: 0.85rem;
+            color: var(--light-text);
+            font-style: italic;
+        }
+        .search-result-excerpt {
+            font-size: 0.92rem;
+            color: #555;
+            margin-top: 0.4rem;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .container, .full-post-container, .about-container, .contact-container, .privacy-container, .sitemap-container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 5% 4rem;
+            box-sizing: border-box;
+        }
+        #posts {
+            padding-top: 0.5rem;
+        }
+        .posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-items: center;
+            align-content: start;
+        }
+        .post-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            width: 100%;
+            max-width: 380px;
+        }
+        .post-card:hover, .post-card:active {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        .post-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .post-content {
+            padding: 1.8rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .post-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin: 0 0 0.6rem;
+            line-height: 1.3;
+        }
+        .post-date {
+            font-size: 0.95rem;
+            color: var(--light-text);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        .post-excerpt {
+            font-size: 1.05rem;
+            margin-bottom: 1.2rem;
+            flex-grow: 1;
+        }
+        .read-more-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+        }
+        .read-more {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+            text-align: center;
+            min-width: 200px;
+        }
+        .read-more:hover, .read-more:active {
+            background: #3a7bc8;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 3rem 0;
+            font-size: 1.1rem;
+        }
+        .pagination button {
+            padding: 0.8rem 1.2rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .pagination button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .pagination span {
+            font-weight: 600;
+        }
+        #full-post, #about-page, #contact-page, #privacy-page, #sitemap-page {
+            display: none;
+        }
+        .featured-image {
+            display: block;
+            width: 1200px;
+            max-width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin: 1rem auto 2rem;
+        }
+        .about-container, .full-post-container, .privacy-container, .contact-container, .sitemap-container {
+            max-width: 1400px;
+        }
+        .about-text, .post-body, .sitemap-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+        .full-post-container h1, .about-container h1, .contact-container h1, .privacy-container h1, .sitemap-container h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 1rem 0;
+            line-height: 1.2;
+        }
+        .back-btn {
+            display: inline-block;
+            margin: 0 0 0.8rem 0;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0.4rem 0;
+        }
+        .back-btn:hover, .back-btn:active {
+            text-decoration: underline;
+        }
+        .social-share {
+            text-align: center;
+            margin: 2rem 0 3rem;
+            font-size: 1.1rem;
+            color: var(--light-text);
+        }
+        .social-share p {
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .share-btn:hover {
+            transform: scale(1.15);
+            opacity: 0.9;
+        }
+        .twitter { background: #1da1f2; }
+        .facebook { background: #1877f2; }
+        .linkedin { background: #0a66c2; }
+        .whatsapp { background: #25d366; }
+        .email { background: #ea4335; }
+        .article-bottom-nav {
+            text-align: center;
+            margin: 2rem 0 1rem;
+            font-size: 1.15rem;
+        }
+        .article-bottom-nav a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .article-bottom-nav a:hover, .article-bottom-nav a:active {
+            background: rgba(74, 144, 226, 0.1);
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 3rem 5%;
+            font-size: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .sitemap-list {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+        .sitemap-list li {
+            margin-bottom: 1.2rem;
+        }
+        .sitemap-list a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .sitemap-list a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 1024px) {
+            .posts {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+            nav {
+                padding: 1rem 4%;
+            }
+        }
+        @media (max-width: 768px) {
+            header {
+                height: 340px;
+            }
+            header h1 {
+                font-size: 3.2rem;
+            }
+            header p {
+                font-size: 1.4rem;
+            }
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem 4%;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 1rem;
+                width: 100%;
+            }
+            nav a {
+                font-size: 1.3rem;
+                padding: 1rem;
+            }
+            .search-container {
+                margin: 1rem 0 0.5rem;
+                width: 100%;
+            }
+            .container, .full-post-container, .about-container, .contact-container, .privacy-container, .sitemap-container {
+                padding: 0.5rem 4% 3rem;
+            }
+            .posts {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .post-img {
+                height: 320px;
+            }
+            .featured-image {
+                width: 100%;
+                height: auto;
+            }
+            .full-post-container h1, .about-container h1, .sitemap-container h1 {
+                font-size: 2.5rem;
+            }
+            #search-results {
+                position: relative;
+                margin-top: 1rem;
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            .social-buttons {
+                gap: 1rem;
+            }
+            .share-btn {
+                width: 44px;
+                height: 44px;
+                font-size: 1.2rem;
+            }
+        }
+        @media (min-width: 1400px) {
+            .container, .posts, .full-post-container, .about-container, .sitemap-container {
+                padding-left: 8%;
+                padding-right: 8%;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <h1>Puppy & Dog Haven</h1>
-      <p>Stories, Tips, and Endless Adorableness</p>
-    </div>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a onclick="showHome()">Home</a></li>
-      <li><a onclick="showAbout()">About</a></li>
-      <li><a onclick="showContact()">Contact</a></li>
-      <li><a onclick="showPrivacy()">Privacy Policy</a></li>
-    </ul>
-    <div class="search-container">
-      <input type="text" id="search-input" placeholder="Search posts..." autocomplete="off">
-      <i class="fas fa-search search-icon"></i>
-    </div>
-  </nav>
-
-  <div id="search-results"></div>
-
-  <div class="container" id="main-content">
-    <section id="posts">
-      <div class="posts" id="blog-posts"></div>
-      <div class="pagination" id="pagination"></div>
-    </section>
-  </div>
-
-  <div id="full-post"></div>
-
-  <div id="about-page">
-    <div class="about-container">
-      <a onclick="showHome()" class="back-btn">← Back to Home</a>
-      <h1>About Puppy & Dog Haven</h1>
-      <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Joyful group of dogs playing together in a sunny meadow at golden hour" loading="lazy" class="featured-image">
-      <div class="about-text">
-        <p>For thousands of years dogs have been humanity’s closest companions — the very first animal we domesticated. From ancient wolves to the countless breeds we know today, they’ve adapted alongside us, becoming attuned to our emotions in ways few other creatures can match. Scientific research shows dogs can read our facial expressions, sense mood changes through scent, and even experience a form of emotional mirroring that deepens our bond every day.</p>
-        
-        <p>At Puppy & Dog Haven we celebrate this extraordinary relationship in every way possible. Whether you’re a new puppy parent dealing with midnight zoomies, an experienced owner navigating senior dog care, or simply someone who smiles at every tail wag you see online — this space is for you. We share realistic training advice that works in real homes, heartwarming rescue stories, breed spotlights, seasonal safety guides, health tips grounded in current veterinary knowledge, and plenty of adorable photos and videos that remind us why dogs make life so much brighter.</p>
-        
-        <p>Our mission is straightforward but deeply felt: to help every dog owner — new or lifelong — create a happier, healthier, more joyful life with their four-legged family member. Because every dog, no matter their size, age, history, or quirks, deserves love, patience, understanding, and the very best care we can give. Thank you for being part of this community. We’re truly grateful to share this journey of unconditional love, daily laughter, gentle lessons, and endless tail-wags with you. 🐾❤️</p>
-      </div>
-
-      <div class="social-share">
-        <p>Share this page:</p>
-        <div class="social-buttons">
-          <a href="#" class="share-btn twitter" onclick="shareTwitter()" title="Share on Twitter/X"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="share-btn facebook" onclick="shareFacebook()" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="share-btn linkedin" onclick="shareLinkedIn()" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp()" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="#" class="share-btn email" onclick="shareEmail()" title="Share via Email"><i class="fas fa-envelope"></i></a>
+    <header>
+        <div class="header-content">
+            <h1>Puppy & Dog Haven</h1>
+            <p>Stories, Tips, and Endless Adorableness</p>
         </div>
-      </div>
+    </header>
 
-      <div class="article-bottom-nav">
-        <a onclick="showHome()">← Back to Home</a>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact-page">
-    <div class="full-post-container">
-      <a onclick="showHome()" class="back-btn">← Back to Home</a>
-      <h1>Contact Us</h1>
-      <p style="text-align:center; font-size:1.2rem; margin:2rem 0;">
-        We'd love to hear from you — whether it's a question, a story about your dog, or just to say hi!
-      </p>
-      <p style="text-align:center; font-size:1.5rem; font-weight:bold; margin:2rem 0;">
-        <a href="mailto:puppyanddoghaven@gmail.com" style="color:var(--primary); text-decoration:none;">
-          puppyanddoghaven@gmail.com
-        </a>
-      </p>
-      <p style="text-align:center; color:var(--light-text);">
-        (Click the email address to send us a message)
-      </p>
-    </div>
-  </div>
-
-  <div id="privacy-page">
-    <div class="full-post-container">
-      <a onclick="showHome()" class="back-btn">← Back to Home</a>
-      <h1>Privacy Policy</h1>
-      <p class="post-meta">Last updated: January 03, 2026</p>
-      <div class="about-text">
-        <p>This Privacy Policy describes how Puppy & Dog Haven ("we", "us", or "our") collects, uses, and discloses your personal information when you visit our website or interact with our content.</p>
-        <h3>1. Information We Collect</h3>
-        <p>We collect minimal personal information:</p>
+    <nav>
         <ul>
-          <li><strong>Automatically collected data</strong>: IP address, browser type, pages visited, time spent on site (via analytics tools like Google Analytics).</li>
-          <li><strong>Voluntarily provided data</strong>: Email address if you contact us or subscribe to updates.</li>
+            <li><a onclick="showHome()">Home</a></li>
+            <li><a onclick="showAbout()">About</a></li>
+            <li><a onclick="showContact()">Contact</a></li>
+            <li><a onclick="showPrivacy()">Privacy Policy</a></li>
+            <li><a onclick="showSitemap()">Sitemap</a></li>
         </ul>
-        <h3>2. How We Use Your Information</h3>
-        <p>We use the collected information to:</p>
-        <ul>
-          <li>Improve our website and content</li>
-          <li>Understand visitor behavior and preferences</li>
-          <li>Respond to your inquiries</li>
-          <li>Comply with legal obligations</li>
-        </ul>
-        <h3>3. Cookies and Tracking Technologies</h3>
-        <p>We use cookies and similar technologies to enhance your experience. You can manage cookie preferences through your browser settings. We may use Google Analytics to understand site usage.</p>
-        <h3>4. Third-Party Services</h3>
-        <p>We use third-party services (e.g., Google Analytics, embedded media from Pexels/Shutterstock). These services may collect data according to their own privacy policies.</p>
-        <h3>5. Data Sharing</h3>
-        <p>We do not sell your personal information. We may share anonymized data with analytics providers or as required by law.</p>
-        <h3>6. Your Rights</h3>
-        <p>You have the right to:</p>
-        <ul>
-          <li>Access your personal data</li>
-          <li>Request deletion of your data (where applicable)</li>
-          <li>Opt out of cookies/tracking</li>
-        </ul>
-        <p>Contact us at puppyanddoghaven@gmail.com to exercise these rights.</p>
-        <h3>7. Data Security</h3>
-        <p>We implement reasonable security measures to protect your information, but no method of transmission over the internet is 100% secure.</p>
-        <h3>8. Changes to This Policy</h3>
-        <p>We may update this policy from time to time. Changes will be posted on this page with an updated effective date.</p>
-        <h3>9. Contact Us</h3>
-        <p>If you have questions about this Privacy Policy, contact us at: <strong>puppyanddoghaven@gmail.com</strong></p>
-      </div>
-
-      <div class="social-share">
-        <p>Share this page:</p>
-        <div class="social-buttons">
-          <a href="#" class="share-btn twitter" onclick="shareTwitter()" title="Share on Twitter/X"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="share-btn facebook" onclick="shareFacebook()" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="share-btn linkedin" onclick="shareLinkedIn()" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp()" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="#" class="share-btn email" onclick="shareEmail()" title="Share via Email"><i class="fas fa-envelope"></i></a>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search posts..." autocomplete="off">
+            <i class="fas fa-search search-icon"></i>
         </div>
-      </div>
+    </nav>
 
-      <div class="article-bottom-nav">
-        <a onclick="showHome()">← Back to Home</a>
-      </div>
+    <div id="search-results"></div>
+
+    <div class="container" id="main-content">
+        <section id="posts">
+            <div class="posts" id="blog-posts"></div>
+            <div class="pagination" id="pagination"></div>
+        </section>
     </div>
-  </div>
 
-  <footer>
-    <p>© 2026 Puppy & Dog Haven. All rights reserved. Crafted with care for dog enthusiasts.</p>
-  </footer>
+    <div id="full-post"></div>
 
-  <script>
-    console.log("Puppy & Dog Haven - GA4 analytics added");
+    <div id="about-page">
+        <div class="about-container">
+            <a onclick="showHome()" class="back-btn">← Back to Home</a>
+            <h1>About Puppy & Dog Haven</h1>
+            <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Joyful group of dogs playing together in a sunny meadow at golden hour" loading="lazy" class="featured-image">
+            <div class="about-text">
+                <p>For thousands of years dogs have been humanity’s closest companions — the very first animal we domesticated. From ancient wolves to the countless breeds we know today, they’ve adapted alongside us, becoming attuned to our emotions in ways few other creatures can match. Scientific research shows dogs can read our facial expressions, sense mood changes through scent, and even experience a form of emotional mirroring that deepens our bond every day.</p>
+                <p>At Puppy & Dog Haven we celebrate this extraordinary relationship in every way possible. Whether you’re a new puppy parent dealing with midnight zoomies, an experienced owner navigating senior dog care, or simply someone who smiles at every tail wag you see online — this space is for you. We share realistic training advice that works in real homes, heartwarming rescue stories, breed spotlights, seasonal safety guides, health tips grounded in current veterinary knowledge, and plenty of adorable photos and videos that remind us why dogs make life so much brighter.</p>
+                <p>Our mission is straightforward but deeply felt: to help every dog owner — new or lifelong — create a happier, healthier, more joyful life with their four-legged family member. Because every dog, no matter their size, age, history, or quirks, deserves love, patience, understanding, and the very best care we can give. Thank you for being part of this community. We’re truly grateful to share this journey of unconditional love, daily laughter, gentle lessons, and endless tail-wags with you. 🐾❤️</p>
+            </div>
+            <div class="social-share">
+                <p>Share this page:</p>
+                <div class="social-buttons">
+                    <a href="#" class="share-btn twitter" onclick="shareTwitter()" title="Share on Twitter/X"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="share-btn facebook" onclick="shareFacebook()" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="share-btn linkedin" onclick="shareLinkedIn()" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp()" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="share-btn email" onclick="shareEmail()" title="Share via Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="article-bottom-nav">
+                <a onclick="showHome()">← Back to Home</a>
+            </div>
+        </div>
+    </div>
 
-    const posts = [
+    <div id="contact-page">
+        <div class="full-post-container">
+            <a onclick="showHome()" class="back-btn">← Back to Home</a>
+            <h1>Contact Us</h1>
+            <p style="text-align:center; font-size:1.2rem; margin:2rem 0;"> We'd love to hear from you — whether it's a question, a story about your dog, or just to say hi! </p>
+            <p style="text-align:center; font-size:1.5rem; font-weight:bold; margin:2rem 0;">
+                <a href="mailto:puppyanddoghaven@gmail.com" style="color:var(--primary); text-decoration:none;"> puppyanddoghaven@gmail.com </a>
+            </p>
+            <p style="text-align:center; color:var(--light-text);"> (Click the email address to send us a message) </p>
+        </div>
+    </div>
 
-      {
-title: "Why Dogs Are the Ultimate Companions in 2025",
-date: "January 3, 2025",
-image: "https://images.pexels.com/photos/35489948/pexels-photo-35489948.jpeg",
-excerpt: "From wagging tails to endless loyalty – why dogs continue to steal hearts and dominate our lives in 2025.",
-content: `<p>Dogs have always held a special place in human hearts, but in 2025, their role in our lives has never been more appreciated. They’re more than just pets—they’re companions, confidants, stress-relievers, and sometimes even therapists with fur. Whether you’re a first-time dog owner or have spent decades living with these four-legged friends, it’s impossible not to notice the joy, chaos, and unconditional love they bring to everyday life. Every tail wag, goofy grin, and unexpected nudge reminds us why dogs are considered man’s best friend, and why no home truly feels complete without one.</p>
+    <div id="privacy-page">
+        <div class="full-post-container">
+            <a onclick="showHome()" class="back-btn">← Back to Home</a>
+            <h1>Privacy Policy</h1>
+            <p class="post-meta">Last updated: January 03, 2026</p>
+            <div class="about-text">
+                <p>This Privacy Policy describes how Puppy & Dog Haven ("we", "us", or "our") collects, uses, and discloses your personal information when you visit our website or interact with our content.</p>
+                <h3>1. Information We Collect</h3>
+                <p>We collect minimal personal information:</p>
+                <ul>
+                    <li><strong>Automatically collected data</strong>: IP address, browser type, pages visited, time spent on site (via analytics tools like Google Analytics).</li>
+                    <li><strong>Voluntarily provided data</strong>: Email address if you contact us or subscribe to updates.</li>
+                </ul>
+                <h3>2. How We Use Your Information</h3>
+                <p>We use the collected information to:</p>
+                <ul>
+                    <li>Improve our website and content</li>
+                    <li>Understand visitor behavior and preferences</li>
+                    <li>Respond to your inquiries</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+                <h3>3. Cookies and Tracking Technologies</h3>
+                <p>We use cookies and similar technologies to enhance your experience. You can manage cookie preferences through your browser settings. We may use Google Analytics to understand site usage.</p>
+                <h3>4. Third-Party Services</h3>
+                <p>We use third-party services (e.g., Google Analytics, embedded media from Pexels/Shutterstock). These services may collect data according to their own privacy policies.</p>
+                <h3>5. Data Sharing</h3>
+                <p>We do not sell your personal information. We may share anonymized data with analytics providers or as required by law.</p>
+                <h3>6. Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal data</li>
+                    <li>Request deletion of your data (where applicable)</li>
+                    <li>Opt out of cookies/tracking</li>
+                </ul>
+                <p>Contact us at puppyanddoghaven@gmail.com to exercise these rights.</p>
+                <h3>7. Data Security</h3>
+                <p>We implement reasonable security measures to protect your information, but no method of transmission over the internet is 100% secure.</p>
+                <h3>8. Changes to This Policy</h3>
+                <p>We may update this policy from time to time. Changes will be posted on this page with an updated effective date.</p>
+                <h3>9. Contact Us</h3>
+                <p>If you have questions about this Privacy Policy, contact us at: <strong>puppyanddoghaven@gmail.com</strong></p>
+            </div>
+            <div class="social-share">
+                <p>Share this page:</p>
+                <div class="social-buttons">
+                    <a href="#" class="share-btn twitter" onclick="shareTwitter()" title="Share on Twitter/X"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="share-btn facebook" onclick="shareFacebook()" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="share-btn linkedin" onclick="shareLinkedIn()" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp()" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="share-btn email" onclick="shareEmail()" title="Share via Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="article-bottom-nav">
+                <a onclick="showHome()">← Back to Home</a>
+            </div>
+        </div>
+    </div>
 
-<p>One of the most amazing things about dogs is their incredible variety. From tiny teacup breeds that fit in a purse to massive gentle giants who think they’re lap dogs, there’s a perfect match for everyone. Each breed has its own personality quirks, energy levels, and ways of showing love. But no matter the size or shape, dogs share a common thread: their unwavering loyalty and desire to be part of your life. In 2025, dog owners are celebrating this diversity more than ever, sharing stories, photos, and videos that highlight how each pup brings its own flavor of joy into the household.</p>
+    <div id="sitemap-page">
+        <div class="full-post-container sitemap-container">
+            <a onclick="showHome()" class="back-btn">← Back to Home</a>
+            <h1>Sitemap</h1>
+            <p class="post-meta">Last updated: January 03, 2026</p>
+            <div class="sitemap-text">
+                <ul class="sitemap-list">
+                    <li><a onclick="showHome()">Home</a></li>
+                    <li><a onclick="showAbout()">About</a></li>
+                    <li><a onclick="showContact()">Contact</a></li>
+                    <li><a onclick="showPrivacy()">Privacy Policy</a></li>
+                    <li><a onclick="showSitemap()">Sitemap</a></li>
+                </ul>
+                <p><strong>Blog Posts:</strong></p>
+                <ul class="sitemap-list" id="sitemap-posts-list"></ul>
+            </div>
+            <div class="social-share">
+                <p>Share this page:</p>
+                <div class="social-buttons">
+                    <a href="#" class="share-btn twitter" onclick="shareTwitter()" title="Share on Twitter/X"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="share-btn facebook" onclick="shareFacebook()" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="share-btn linkedin" onclick="shareLinkedIn()" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp()" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="share-btn email" onclick="shareEmail()" title="Share via Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="article-bottom-nav">
+                <a onclick="showHome()">← Back to Home</a>
+            </div>
+        </div>
+    </div>
 
-<p>Mental stimulation and physical activity are also huge parts of a dog’s happiness. In today’s world, people understand that dogs aren’t just couch companions—they need engagement to thrive. Games, training sessions, interactive toys, and long walks aren’t optional; they’re vital for a well-rounded pup. Dogs that are active both physically and mentally are healthier, happier, and more balanced, which in turn makes life better for their humans. 2025 has seen a surge in dog-friendly innovations, from puzzle feeders to high-tech treat dispensers, all designed to keep our furry friends challenged, engaged, and entertained.</p>
+    <footer>
+        <p>© 2026 Puppy & Dog Haven. All rights reserved. Crafted with care for dog enthusiasts.</p>
+    </footer>
 
-<p>One of the best parts about dogs is their emotional intelligence. They somehow sense our moods, our stress, and our happiness, often before we even realize it ourselves. A wagging tail or a comforting nuzzle can turn a bad day around, and a playful bounce can energize even the laziest human. Therapy dogs have been officially recognized in many more communities this year, and people are increasingly aware of the emotional support dogs provide. Their ability to empathize with humans makes them not just pets, but vital members of the family.</p>
+    <script>
+        console.log("Puppy & Dog Haven - GA4 analytics added");
 
-<p>Of course, life with dogs isn’t always serene. They have a knack for getting into trouble, whether it’s digging up the yard, raiding the trash, or, yes, occasionally thinking the couch is a chew toy. But even in chaos, they teach patience, resilience, and the importance of laughter. Each mischievous act becomes a story, a memory, or a hilarious video for social media. Dog owners in 2025 have embraced these imperfections, recognizing that the occasional mess is a small price to pay for the endless love and companionship a dog provides.</p>
-
-<p>Nutrition, healthcare, and regular exercise remain crucial in keeping dogs healthy, especially as they age. From personalized diets to preventative care, pet owners are more informed than ever about what keeps their dogs thriving. Regular check-ups, vaccinations, and mindful attention to weight and energy levels ensure that dogs live longer, happier lives. 2025 trends also highlight natural diets, joint supplements, and breed-specific care to optimize every dog’s health. These small adjustments make a big difference in quality of life, and most dogs seem to respond with extra tail wags and puppy eyes that say “thank you.”</p>
-
-<p>Socialization is another critical piece of the puzzle. Dogs are inherently social animals, and interaction with humans, other dogs, and even new environments keeps them confident and well-adjusted. Meetups, dog cafés, and dog-friendly events are increasingly popular in 2025, offering pups and their owners a chance to bond, learn, and have fun together. For dogs, socialization reduces anxiety, boredom, and behavioral problems, while giving owners the joy of watching their pets thrive in diverse situations. It’s a win-win that strengthens the human-animal bond even further.</p>
-
-<p>Training is also more than just teaching basic commands; it’s a way to build communication, trust, and understanding. Positive reinforcement techniques dominate the scene in 2025, emphasizing rewards, praise, and play rather than punishment. Dogs respond better when they feel appreciated and understood, and owners enjoy more obedient, confident, and joyful companions as a result. Training sessions also double as mental stimulation, giving dogs a sense of accomplishment while deepening the bond with their humans.</p>
-
-<p>At the end of the day, dogs are a unique combination of joy, loyalty, and unpredictability. They comfort us, challenge us, and often make life more colorful with their antics and personalities. In 2025, the appreciation for dogs has grown beyond simple companionship—they are celebrated as integral parts of the family, sources of emotional support, and daily reminders of unconditional love. From the tiniest Pomeranian to the most massive Great Dane, every dog contributes something special to the lives they touch, teaching lessons about patience, joy, and living in the moment.</p>
-
-<p>In conclusion, dogs in 2025 continue to prove why they’re beloved by millions worldwide. Their ability to understand, entertain, and comfort makes them unparalleled companions. Life with a dog is messy, fun, emotional, and endlessly rewarding. They challenge us, inspire us, and love us fiercely, no matter our flaws. As we continue to embrace the joys and responsibilities of dog ownership, one thing is clear: the world is a better place with dogs by our side, wagging tails, sloppy kisses, and all.</p>`
-},
-
-      {
+        const posts = [
+{
         title: "Why Every Dog Needs a 'Job' in 2026 – Even Couch Potatoes",
         date: "January 03, 2026",
         image: "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg",
@@ -2002,219 +1962,229 @@ In 2025, Dachshunds remain one of the most popular small breeds, and it’s easy
   <p>What’s the funniest costume disaster your dog has inflicted on you? Share the trauma (and pics if you survived)! 😂🍔</p>`
 },
 
-      // Add your remaining posts here in the same format.
-      // For now, these three are enough to make the blog visible and paginated.
-      // Copy-paste your full original array once you have it.
-    ];
+        ];
 
-    const postsPerPage = 9;
-    let currentPage = 1;
+        const postsPerPage = 9;
+        let currentPage = 1;
 
-    const searchInput = document.getElementById('search-input');
-    const searchResults = document.getElementById('search-results');
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
 
-    function hideAllPages() {
-      document.getElementById('main-content').style.display = 'none';
-      document.getElementById('full-post').style.display = 'none';
-      document.getElementById('about-page').style.display = 'none';
-      document.getElementById('contact-page').style.display = 'none';
-      document.getElementById('privacy-page').style.display = 'none';
-      searchResults.style.display = 'none';
-      searchInput.value = '';
-    }
-
-    function showHome() {
-      currentPage = 1;
-      hideAllPages();
-      document.getElementById('main-content').style.display = 'block';
-      renderPosts();
-      window.scrollTo(0, 0);
-    }
-
-    function showFullPost(index) {
-      hideAllPages();
-      const post = posts[index];
-      document.getElementById('full-post').style.display = 'block';
-      document.getElementById('full-post').innerHTML = `
-        <div class="full-post-container">
-          <a onclick="showHome()" class="back-btn">← Back to Home</a>
-          <img src="${post.image}" alt="${post.title}" loading="lazy" decoding="async" class="featured-image">
-          <h1>${post.title}</h1>
-          <p class="post-meta">Published on ${post.date}</p>
-          <div class="post-body">${post.content}</div>
-
-          <div class="social-share">
-            <p>Share this article:</p>
-            <div class="social-buttons">
-              <a href="#" class="share-btn twitter" onclick="shareTwitter()" title="Share on Twitter/X"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="share-btn facebook" onclick="shareFacebook()" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="share-btn linkedin" onclick="shareLinkedIn()" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp()" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-              <a href="#" class="share-btn email" onclick="shareEmail()" title="Share via Email"><i class="fas fa-envelope"></i></a>
-            </div>
-          </div>
-
-          <div class="article-bottom-nav">
-            <a onclick="showHome()">← Back to Home</a>
-          </div>
-        </div>
-      `;
-      window.scrollTo(0, 0);
-    }
-
-    function showAbout() {
-      hideAllPages();
-      document.getElementById('about-page').style.display = 'block';
-      window.scrollTo(0, 0);
-    }
-
-    function showContact() {
-      hideAllPages();
-      document.getElementById('contact-page').style.display = 'block';
-      window.scrollTo(0, 0);
-    }
-
-    function showPrivacy() {
-      hideAllPages();
-      document.getElementById('privacy-page').style.display = 'block';
-      window.scrollTo(0, 0);
-    }
-
-    function renderPosts() {
-      const blogContainer = document.getElementById('blog-posts');
-      blogContainer.innerHTML = '';
-      const start = (currentPage - 1) * postsPerPage;
-      const end = Math.min(start + postsPerPage, posts.length);
-      const pagePosts = posts.slice(start, end);
-
-      pagePosts.forEach((post, idx) => {
-        const globalIndex = start + idx;
-        const card = document.createElement('div');
-        card.className = 'post-card';
-        card.innerHTML = `
-          <img src="${post.image}" alt="${post.title} - ${post.date}" class="post-img" loading="lazy" decoding="async" width="400" height="250">
-          <div class="post-content">
-            <h2>${post.title}</h2>
-            <p class="post-date">${post.date}</p>
-            <p class="post-excerpt">${post.excerpt}</p>
-            <div class="read-more-wrapper">
-              <a href="#" class="read-more" onclick="showFullPost(${globalIndex}); return false;">Read Full Article</a>
-            </div>
-          </div>
-        `;
-        blogContainer.appendChild(card);
-      });
-
-      renderPagination();
-    }
-
-    function renderPagination() {
-      const totalPages = Math.ceil(posts.length / postsPerPage);
-      const pagination = document.getElementById('pagination');
-      pagination.innerHTML = '';
-
-      const prevBtn = document.createElement('button');
-      prevBtn.textContent = 'Previous';
-      prevBtn.disabled = currentPage === 1;
-      prevBtn.onclick = () => {
-        if (currentPage > 1) {
-          currentPage--;
-          renderPosts();
-          window.scrollTo(0, 0);
+        function hideAllPages() {
+            document.getElementById('main-content').style.display = 'none';
+            document.getElementById('full-post').style.display = 'none';
+            document.getElementById('about-page').style.display = 'none';
+            document.getElementById('contact-page').style.display = 'none';
+            document.getElementById('privacy-page').style.display = 'none';
+            document.getElementById('sitemap-page').style.display = 'none';
+            searchResults.style.display = 'none';
+            searchInput.value = '';
         }
-      };
-      pagination.appendChild(prevBtn);
 
-      const pageInfo = document.createElement('span');
-      pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
-      pagination.appendChild(pageInfo);
-
-      const nextBtn = document.createElement('button');
-      nextBtn.textContent = 'Next';
-      nextBtn.disabled = currentPage === totalPages;
-      nextBtn.onclick = () => {
-        if (currentPage < totalPages) {
-          currentPage++;
-          renderPosts();
-          window.scrollTo(0, 0);
+        function showHome() {
+            currentPage = 1;
+            hideAllPages();
+            document.getElementById('main-content').style.display = 'block';
+            renderPosts();
+            window.scrollTo(0, 0);
         }
-      };
-      pagination.appendChild(nextBtn);
-    }
 
-    function shareTwitter() {
-      const url = encodeURIComponent(window.location.href);
-      const text = encodeURIComponent(document.title + " - Puppy & Dog Haven 🐾");
-      window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
-    }
+        function showFullPost(index) {
+            hideAllPages();
+            const post = posts[index];
+            document.getElementById('full-post').style.display = 'block';
+            document.getElementById('full-post').innerHTML = `
+                <div class="full-post-container">
+                    <a onclick="showHome()" class="back-btn">← Back to Home</a>
+                    <img src="${post.image}" alt="${post.title}" loading="lazy" decoding="async" class="featured-image">
+                    <h1>${post.title}</h1>
+                    <p class="post-meta">Published on ${post.date}</p>
+                    <div class="post-body">${post.content}</div>
+                    <div class="social-share">
+                        <p>Share this article:</p>
+                        <div class="social-buttons">
+                            <a href="#" class="share-btn twitter" onclick="shareTwitter()" title="Share on Twitter/X"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-btn facebook" onclick="shareFacebook()" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="share-btn linkedin" onclick="shareLinkedIn()" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp()" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="share-btn email" onclick="shareEmail()" title="Share via Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="article-bottom-nav">
+                        <a onclick="showHome()">← Back to Home</a>
+                    </div>
+                </div>
+            `;
+            window.scrollTo(0, 0);
+        }
 
-    function shareFacebook() {
-      const url = encodeURIComponent(window.location.href);
-      window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-    }
+        function showAbout() {
+            hideAllPages();
+            document.getElementById('about-page').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
 
-    function shareLinkedIn() {
-      const url = encodeURIComponent(window.location.href);
-      const title = encodeURIComponent(document.title);
-      window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}`, '_blank');
-    }
+        function showContact() {
+            hideAllPages();
+            document.getElementById('contact-page').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
 
-    function shareWhatsApp() {
-      const url = window.location.href;
-      const text = encodeURIComponent(document.title + " - Puppy & Dog Haven 🐾 " + url);
-      window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
-    }
+        function showPrivacy() {
+            hideAllPages();
+            document.getElementById('privacy-page').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
 
-    function shareEmail() {
-      const subject = encodeURIComponent(document.title);
-      const body = encodeURIComponent("Check out this page from Puppy & Dog Haven:\n\n" + window.location.href);
-      window.open(`mailto:?subject=${subject}&body=${body}`);
-    }
+        function showSitemap() {
+            hideAllPages();
+            document.getElementById('sitemap-page').style.display = 'block';
+            renderSitemapPosts();
+            window.scrollTo(0, 0);
+        }
 
-    searchInput.addEventListener('input', function() {
-      const query = this.value.trim().toLowerCase();
-      if (query.length < 2) {
-        searchResults.style.display = 'none';
-        return;
-      }
-      const matches = posts.filter(post => 
-        post.title.toLowerCase().includes(query) ||
-        post.excerpt.toLowerCase().includes(query) ||
-        post.date.toLowerCase().includes(query) ||
-        post.content.toLowerCase().includes(query)
-      );
-      if (!matches.length) {
-        searchResults.innerHTML = '<div class="search-result-item"><p style="color:#777; text-align:center;">No matching posts found</p></div>';
-        searchResults.style.display = 'block';
-        return;
-      }
-      let html = '';
-      matches.forEach(post => {
-        const idx = posts.indexOf(post);
-        const ex = post.excerpt.length > 120 ? post.excerpt.substring(0,117)+'...' : post.excerpt;
-        html += `<div class="search-result-item" onclick="showFullPost(${idx}); searchResults.style.display='none'; searchInput.value='';">
-          <div class="search-result-title">${post.title}</div>
-          <div class="search-result-date">${post.date}</div>
-          <div class="search-result-excerpt">${ex}</div>
-        </div>`;
-      });
-      searchResults.innerHTML = html;
-      searchResults.style.display = 'block';
-    });
+        function renderPosts() {
+            const blogContainer = document.getElementById('blog-posts');
+            blogContainer.innerHTML = '';
+            const start = (currentPage - 1) * postsPerPage;
+            const end = Math.min(start + postsPerPage, posts.length);
+            const pagePosts = posts.slice(start, end);
 
-    document.addEventListener('click', e => {
-      if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-        searchResults.style.display = 'none';
-      }
-    });
+            pagePosts.forEach((post, idx) => {
+                const globalIndex = start + idx;
+                const card = document.createElement('div');
+                card.className = 'post-card';
+                card.innerHTML = `
+                    <img src="${post.image}" alt="${post.title} - ${post.date}" class="post-img" loading="lazy" decoding="async" width="400" height="250">
+                    <div class="post-content">
+                        <h2>${post.title}</h2>
+                        <p class="post-date">${post.date}</p>
+                        <p class="post-excerpt">${post.excerpt}</p>
+                        <div class="read-more-wrapper">
+                            <a href="#" class="read-more" onclick="showFullPost(${globalIndex}); return false;">Read Full Article</a>
+                        </div>
+                    </div>
+                `;
+                blogContainer.appendChild(card);
+            });
+            renderPagination();
+        }
 
-    // Initial load
-    hideAllPages();
-    document.getElementById('main-content').style.display = 'block';
-    renderPosts();
-  </script>
+        function renderPagination() {
+            const totalPages = Math.ceil(posts.length / postsPerPage);
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = '';
+
+            const prevBtn = document.createElement('button');
+            prevBtn.textContent = 'Previous';
+            prevBtn.disabled = currentPage === 1;
+            prevBtn.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderPosts();
+                    window.scrollTo(0, 0);
+                }
+            };
+            pagination.appendChild(prevBtn);
+
+            const pageInfo = document.createElement('span');
+            pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+            pagination.appendChild(pageInfo);
+
+            const nextBtn = document.createElement('button');
+            nextBtn.textContent = 'Next';
+            nextBtn.disabled = currentPage === totalPages;
+            nextBtn.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderPosts();
+                    window.scrollTo(0, 0);
+                }
+            };
+            pagination.appendChild(nextBtn);
+        }
+
+        function renderSitemapPosts() {
+            const sitemapList = document.getElementById('sitemap-posts-list');
+            sitemapList.innerHTML = '';
+            posts.forEach((post, index) => {
+                const li = document.createElement('li');
+                li.innerHTML = `<a onclick="showFullPost(${index})">${post.title} (${post.date})</a>`;
+                sitemapList.appendChild(li);
+            });
+        }
+
+        function shareTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent(document.title + " - Puppy & Dog Haven 🐾");
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+        }
+
+        function shareFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}`, '_blank');
+        }
+
+        function shareWhatsApp() {
+            const url = window.location.href;
+            const text = encodeURIComponent(document.title + " - Puppy & Dog Haven 🐾 " + url);
+            window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
+        }
+
+        function shareEmail() {
+            const subject = encodeURIComponent(document.title);
+            const body = encodeURIComponent("Check out this page from Puppy & Dog Haven:\n\n" + window.location.href);
+            window.open(`mailto:?subject=${subject}&body=${body}`);
+        }
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.trim().toLowerCase();
+            if (query.length < 2) {
+                searchResults.style.display = 'none';
+                return;
+            }
+            const matches = posts.filter(post =>
+                post.title.toLowerCase().includes(query) ||
+                post.excerpt.toLowerCase().includes(query) ||
+                post.date.toLowerCase().includes(query) ||
+                post.content.toLowerCase().includes(query)
+            );
+            if (!matches.length) {
+                searchResults.innerHTML = '<div class="search-result-item"><p style="color:#777; text-align:center;">No matching posts found</p></div>';
+                searchResults.style.display = 'block';
+                return;
+            }
+            let html = '';
+            matches.forEach(post => {
+                const idx = posts.indexOf(post);
+                const ex = post.excerpt.length > 120 ? post.excerpt.substring(0,117)+'...' : post.excerpt;
+                html += `
+                    <div class="search-result-item" onclick="showFullPost(${idx}); searchResults.style.display='none'; searchInput.value='';">
+                        <div class="search-result-title">${post.title}</div>
+                        <div class="search-result-date">${post.date}</div>
+                        <div class="search-result-excerpt">${ex}</div>
+                    </div>`;
+            });
+            searchResults.innerHTML = html;
+            searchResults.style.display = 'block';
+        });
+
+        document.addEventListener('click', e => {
+            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.style.display = 'none';
+            }
+        });
+
+        // Initial load
+        hideAllPages();
+        document.getElementById('main-content').style.display = 'block';
+        renderPosts();
+    </script>
 </body>
 </html>
-
-
-
