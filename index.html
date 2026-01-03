@@ -4,8 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <title>Puppy & Dog Haven - Adorable Puppies and Dogs</title>
-  <meta name="description" content="A professional blog featuring adorable puppies, dogs, training tips, stories, and care advice.">
+  <meta name="description" content="Discover heartwarming stories, expert puppy & dog training tips, breed guides, health advice, rescue stories, enrichment ideas and adorable photos at Puppy & Dog Haven – your 2025–2026 dog lover’s community.">
+  <meta name="keywords" content="puppies, dogs, dog training, puppy care, dog breeds, rescue dogs, dog health, enrichment, senior dog care, adorable puppies, dog blog 2026">
+  <meta name="author" content="Puppy & Dog Haven">
+  <meta property="og:title" content="Puppy & Dog Haven – Adorable Puppies, Expert Tips & Heartwarming Stories">
+  <meta property="og:description" content="Celebrating the unconditional love of dogs with training advice, breed spotlights, rescue tales, seasonal care guides and endless cuteness. Join our community today!">
+  <meta property="og:image" content="https://communicanine.ca/wp-content/uploads/2021/03/lineofdogs.jpg">
+  <meta property="og:url" content="https://puppyanddoghaven.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Puppy & Dog Haven – Adorable Puppies, Expert Tips & Heartwarming Dog Stories 2026</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -17,6 +26,8 @@
     gtag('js', new Date());
     gtag('config', 'G-S7F2D51PEB');
   </script>
+
+  <link rel="canonical" href="https://puppyanddoghaven.com/">
 
   <style>
     :root {
@@ -656,7 +667,7 @@
     console.log("Puppy & Dog Haven - GA4 analytics added");
 
     const posts = [
-{
+      {
         title: "Why Every Dog Needs a 'Job' in 2026 – Even Couch Potatoes",
         date: "January 03, 2026",
         image: "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg",
@@ -1964,7 +1975,9 @@ In 2025, Dachshunds remain one of the most popular small breeds, and it’s easy
   <p>What’s the funniest costume disaster your dog has inflicted on you? Share the trauma (and pics if you survived)! 😂🍔</p>`
 },
 
-      // Add more posts here
+      // Add your remaining posts here in the same format.
+      // For now, these three are enough to make the blog visible and paginated.
+      // Copy-paste your full original array once you have it.
     ];
 
     const postsPerPage = 9;
@@ -2044,15 +2057,15 @@ In 2025, Dachshunds remain one of the most popular small breeds, and it’s easy
       const blogContainer = document.getElementById('blog-posts');
       blogContainer.innerHTML = '';
       const start = (currentPage - 1) * postsPerPage;
-      const end = start + postsPerPage;
+      const end = Math.min(start + postsPerPage, posts.length);
       const pagePosts = posts.slice(start, end);
 
-      pagePosts.forEach((post, index) => {
-        const globalIndex = start + index;
+      pagePosts.forEach((post, idx) => {
+        const globalIndex = start + idx;
         const card = document.createElement('div');
         card.className = 'post-card';
         card.innerHTML = `
-          <img src="${post.image}" alt="${post.title}" class="post-img" loading="lazy" decoding="async" width="400" height="250">
+          <img src="${post.image}" alt="${post.title} - ${post.date}" class="post-img" loading="lazy" decoding="async" width="400" height="250">
           <div class="post-content">
             <h2>${post.title}</h2>
             <p class="post-date">${post.date}</p>
@@ -2102,7 +2115,6 @@ In 2025, Dachshunds remain one of the most popular small breeds, and it’s easy
       pagination.appendChild(nextBtn);
     }
 
-    // Social sharing functions (unchanged)
     function shareTwitter() {
       const url = encodeURIComponent(window.location.href);
       const text = encodeURIComponent(document.title + " - Puppy & Dog Haven 🐾");
@@ -2132,7 +2144,6 @@ In 2025, Dachshunds remain one of the most popular small breeds, and it’s easy
       window.open(`mailto:?subject=${subject}&body=${body}`);
     }
 
-    // Search functionality (unchanged)
     searchInput.addEventListener('input', function() {
       const query = this.value.trim().toLowerCase();
       if (query.length < 2) {
@@ -2170,10 +2181,10 @@ In 2025, Dachshunds remain one of the most popular small breeds, and it’s easy
       }
     });
 
+    // Initial load
     hideAllPages();
     document.getElementById('main-content').style.display = 'block';
     renderPosts();
   </script>
 </body>
 </html>
-
